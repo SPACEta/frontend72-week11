@@ -14,9 +14,8 @@ document.querySelector('.b-0').onclick = makeZero;
 //Используйте метод getElementById, чтобы найти элемент <p>. При нажатии на кнопку измените его текст на "Привет!"
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
-const paragraph1 = document.getElementById('practicum');
-
 function makeOne() {
+	const paragraph1 = document.getElementById('practicum');
 	paragraph1.innerText = 'Привет!';
 }
 
@@ -27,7 +26,8 @@ document.querySelector('.b-1').onclick = makeOne;
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
 function makeTwo() {
-	//Ваш код
+	const span = document.getElementById('practicum2');
+	span.innerText = 'Привет, Мир!';
 }
 
 document.querySelector('.b-2').onclick = makeTwo;
@@ -37,7 +37,8 @@ document.querySelector('.b-2').onclick = makeTwo;
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
 function makeThree() {
-	//Ваш код
+	const nameh = document.getElementById('practicum3');
+	nameh.innerText = 'Заголовок изменен!';
 }
 
 document.querySelector('.b-3').onclick = makeThree;
@@ -47,7 +48,8 @@ document.querySelector('.b-3').onclick = makeThree;
 //Подсказка: Используйте свойство style для изменения стилей элемента
 
 function makeFour() {
-	//Ваш код
+	const backgroundColor = document.getElementById('practicum4');
+	backgroundColor.style.backgroundColor = 'red';
 }
 
 document.querySelector('.b-4').onclick = makeFour;
@@ -57,7 +59,8 @@ document.querySelector('.b-4').onclick = makeFour;
 //Подсказка: Используйте свойство value для изменения значения элемента формы
 
 function makeFive() {
-	//Ваш код
+	const newValue = document.getElementById('practicum5');
+	newValue.value = 'Новое значение';
 }
 
 document.querySelector('.b-5').onclick = makeFive;
