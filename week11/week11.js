@@ -82,7 +82,9 @@ document.querySelector('.b-6').onclick = makeSix;
 //Подсказка: Используйте знак равенства для изменения атрибутов элемента и метод для изменения текстового содержимого элемента
 
 function makeSeven() {
-	//Ваш код
+	var img1= document.getElementById('practicum7');
+	img1.href = 'https://www.google.com';
+	img1.innerText = 'Ссылка на Google';
 }
 
 document.querySelector('.b-7').onclick = makeSeven;
@@ -93,9 +95,13 @@ document.querySelector('.b-7').onclick = makeSeven;
 
 function makeEight() {
 	//Найдите элемент x
+	const ulLi = document.getElementById('practicum8');
 	//Создайте новый пункт списка y
+	const newLi = document.createElement('li');
 	//Добавьте значение в созданный пункт списка y
+	newLi.textContent = 'Новый элемент';
 	//Добавьте в список х новый элемент y
+	ulLi.append(newLi);
 }
 
 document.querySelector('.b-8').onclick = makeEight;
@@ -106,9 +112,13 @@ document.querySelector('.b-8').onclick = makeEight;
 
 function makeNine() {
 	//Найдите элемент
+	const uloption = document.getElementById('practicum9');
 	//Создайте новый элемент
+	const newoption = document.createElement('option');
 	//Добавьте текст в созданный эелемент
+	newoption.textContent = 'Новый вариант';
 	//Добавьте новый элемент в выпадающий список
+	uloption.append(newoption);
 }
 
 document.querySelector('.b-9').onclick = makeNine;
@@ -118,7 +128,8 @@ document.querySelector('.b-9').onclick = makeNine;
 //Подсказка: Используйте свойство display для изменения стилей элемента
 
 function makeTen() {
-	//Ваш код
+	const ulDisplay = document.getElementById('practicum10');
+	ulDisplay.style.display = "none";
 }
 
 document.querySelector('.b-10').onclick = makeTen;
