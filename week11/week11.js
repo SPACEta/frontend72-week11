@@ -37,7 +37,7 @@ document.querySelector('.b-2').onclick = makeTwo;
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
 function makeThree() {
-	const nameh = document.getElementById('practicum3');
+	const nameh = document.querySelector('#practicum3');
 	nameh.innerText = 'Заголовок изменен!';
 }
 
@@ -48,7 +48,7 @@ document.querySelector('.b-3').onclick = makeThree;
 //Подсказка: Используйте свойство style для изменения стилей элемента
 
 function makeFour() {
-	const backgroundColor = document.getElementById('practicum4');
+	const backgroundColor = document.querySelector('#practicum4');
 	backgroundColor.style.backgroundColor = 'red';
 }
 
@@ -82,7 +82,7 @@ document.querySelector('.b-6').onclick = makeSix;
 //Подсказка: Используйте знак равенства для изменения атрибутов элемента и метод для изменения текстового содержимого элемента
 
 function makeSeven() {
-	var img1= document.getElementById('practicum7');
+	var img1= document.querySelector('#practicum7');
 	img1.href = 'https://www.google.com';
 	img1.innerText = 'Ссылка на Google';
 }
@@ -139,7 +139,9 @@ document.querySelector('.b-10').onclick = makeTen;
 //Подсказка: Используйте свойство style для изменения стилей элемента
 
 function makeEleven() {
-	//Ваш код
+	const buttonCh = document.getElementById('practicum11');
+	buttonCh.style.height = '200px';
+	buttonCh.style.width = '400px';
 }
 
 document.querySelector('.b-11').onclick = makeEleven;
@@ -149,15 +151,19 @@ document.querySelector('.b-11').onclick = makeEleven;
 //Подсказка: Используйте метод toggle() для добавления/удаления класса, который изменяет размеры элемента
 
 function makeTwelve() {
-	//Ваш код
+	const buttonChange = document.querySelector('#practicum12');
+	buttonChange.classList.toggle("large");
 }
+
+document.querySelector('.b-0').onclick = makeZero;
 
 //Задание 13
 //Используйте метод `getElementsByTagName`, чтобы найти первый элемент <ol>. Затем измените его текст на "Первый!".
 //Подсказка: Используйте метод для изменения текстового содержимого элемента
 
 function makeThirteen() {
-	//Ваш код
+	const navFirst = document.getElementsByTagName("ol")[0];
+	navFirst.innerText = 'Первый!';
 }
 
 document.querySelector('.b-13').onclick = makeThirteen;
@@ -168,9 +174,9 @@ document.querySelector('.b-13').onclick = makeThirteen;
 
 function makeFourteen() {
 	//Найдите все элементы <p>
-	//const paragraphs = ваш код;
+	const paragraphs = document.querySelectorAll('p');
 	paragraphs.forEach(function (paragraph) {
-		//Измените их текстовое содержимое у paragraph
+		paragraph.innerText = 'Огого, что могу!';
 	});
 }
 
@@ -183,7 +189,8 @@ document.querySelector('.b-14').onclick = makeFourteen;
 //Подсказка: Используйте метод remove для удаления класса элемента
 
 function makeFifteen() {
-	//Ваш код
+	const deleteClass = document.getElementById('practicum15');
+	deleteClass.classList.remove('practicum15');
 }
 
 document.querySelector('.b-15').onclick = makeFifteen;
@@ -193,7 +200,8 @@ document.querySelector('.b-15').onclick = makeFifteen;
 //Подсказка: Используйте метод add для добавления класса элемента
 
 function makeSixteen() {
-	//Ваш код
+	const addClass = document.getElementById('practicum16');
+	addClass.classList.add('practicum16');
 }
 
 document.querySelector('.b-16').onclick = makeSixteen;
