@@ -92,15 +92,16 @@
         }
       </script>
 
-      <!-- удалить параграф при нажатии на кнопку.-->
-      <p class="myParagraph">This is a paragraph.</p>
-      <button onclick="removeParagraph()">Remove Paragraph</button>
-      <script>
-        function removeParagraph() {
-          let paragraph = document.getElementsByClassName("myParagraph");
-          paragraph.remove();
-        }
-      </script>
+			<!-- удалить параграф при нажатии на кнопку.-->
+			<p class="myParagraph">This is a paragraph.</p>
+			<button onclick="removeParagraph()">Remove Paragraph</button>
+			<script>
+          function removeParagraph() {
+            let paragraph = document.getElementsByClassName('myParagraph');
+            console.log(paragraph);
+            paragraph[0].remove();
+			}
+			</script>
 
       <!--добавить изображение при нажатии на кнопку.-->
       <button onclick="showImage()">Показать изображение</button>

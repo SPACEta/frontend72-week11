@@ -289,7 +289,8 @@ document.querySelector('.b-22').onclick = makeTwentyTwo;
 //Подсказка: Используйте метод removeAttribute для удаления атрибута
 
 function makeTwentyThree() {
-	//Ваш код
+	const aObject = document.getElementById('practicum23');
+	aObject.removeAttribute('href');
 }
 
 document.querySelector('.b-23').onclick = makeTwentyThree;
@@ -299,7 +300,8 @@ document.querySelector('.b-23').onclick = makeTwentyThree;
 //Подсказка: Используйте метод setAttribute для установки атрибута
 
 function makeTwentyFour() {
-	//Ваш код
+	const inputObject = document.getElementById('practicum24');
+	inputObject.setAttribute(name, value);
 }
 
 document.querySelector('.b-24').onclick = makeTwentyFour;
@@ -310,6 +312,7 @@ document.querySelector('.b-24').onclick = makeTwentyFour;
 
 function makeTwentyFive() {
 	//1 шаг: Найдите элемент
+	const aObject = document.getElementById('practicum23');
 	//2 шаг: Добавьте элементу, найденному в первом шаге, атрибут: ('data-info', 'Дополнительная информация');
 	//3 шаг: Запишите значение атрибута в переменную
 	//4 шаг: Найдите элемент, в который нужно вставить значение из 3 шага
