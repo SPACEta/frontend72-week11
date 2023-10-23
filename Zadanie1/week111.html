@@ -61,6 +61,56 @@
         <button onclick="countParagraphs()">Узнать количество Параграфов</button>
         <div id="result"></div>
       </div>
+
+      
+      <div>
+        <button id="mybutton" class="button-primary">Нажми меня</button>
+      </div>
+
+      <!-- изменить цвет текста при нажатии на кнопку.-->
+      <h1 id="myElement">Hello, World!</h1>
+      <button onclick="changeColor()">Change Color</button>
+      <script>
+          function changeColor() {
+            let element = document.getElementById('myElement');
+            element.style.color = 'red';
+          }
+      </script>
+
+      <!-- добавить новый элемент списка при нажатии на кнопку.-->
+      <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+      <button onclick="addListItem()">Add Item</button>
+      <script>
+        function addListItem() {
+          let list = document.getElementById('myList');
+          let item = document.createElement('li');
+          item.innerHTML = 'New Item';
+          list.append(item);
+        }
+      </script>
+
+      <!-- удалить параграф при нажатии на кнопку.-->
+      <p class="myParagraph">This is a paragraph.</p>
+      <button onclick="removeParagraph()">Remove Paragraph</button>
+      <script>
+        function removeParagraph() {
+          let paragraph = document.getElementsByClassName("myParagraph");
+          paragraph.remove();
+        }
+      </script>
+
+      <!--добавить изображение при нажатии на кнопку.-->
+      <button onclick="showImage()">Показать изображение</button>
+      <script>
+          function showImage() {
+            const img = document.createElement('img');
+            img.src = 'image.jpg';
+            document.body.append(img);
+          }
+      </script>
       
     </main>
 

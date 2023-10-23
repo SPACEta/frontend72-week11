@@ -451,6 +451,16 @@
 			</section>
 		</div>
 
+		      <!-- удалить параграф при нажатии на кнопку.-->
+			  <p class="myParagraph">This is a paragraph.</p>
+			  <button onclick="removeParagraph()">Remove Paragraph</button>
+			  <script>
+				function removeParagraph() {
+				  let paragraph = document.getElementsByClassName("myParagraph");
+				  paragraph.remove();
+				}
+			  </script>
+
 		<script src="week11.js"></script>
 	</body>
 </html>

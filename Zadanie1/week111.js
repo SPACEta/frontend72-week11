@@ -35,3 +35,9 @@ console.log(gender);
 		const count = paragraphs.length;
 		alert('Число параграфов: ' + count);
 	}
+
+	document.getElementById('mybutton').onclick = function() {
+		window.location.href = 'https://www.google.com';
+	};
+
+	

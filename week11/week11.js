@@ -211,7 +211,8 @@ document.querySelector('.b-16').onclick = makeSixteen;
 //Подсказка: Используйте метод toggle класса элемента
 
 function makeSeventeen() {
-	//Ваш код
+	const toggleColor = document.getElementById('practicum17');
+	toggleColor.classList.toggle('color');
 }
 
 document.querySelector('.b-17').onclick = makeSeventeen;
@@ -221,7 +222,8 @@ document.querySelector('.b-17').onclick = makeSeventeen;
 //Подсказка: Используйте метод toggle класса элемента
 
 function makeEighteen() {
-	//Ваш код
+	const toggleActive = document.getElementById('practicum18');
+	toggleActive.classList.toggle('active');
 }
 
 document.querySelector('.b-18').onclick = makeEighteen;
@@ -231,8 +233,9 @@ document.querySelector('.b-18').onclick = makeEighteen;
 //Подсказка: Используйте метод remove класса элемента
 
 function makeNineteen() {
-	//Ваш код
-}
+	const removeActive = document.getElementById('practicum19');
+	removeActive.classList.remove('active');
+	}
 
 document.querySelector('.b-19').onclick = makeNineteen;
 
@@ -241,7 +244,10 @@ document.querySelector('.b-19').onclick = makeNineteen;
 //Подсказка: Используйте метод prepend для добавления нового дочернего элемента в начало элемента <div>
 
 function makeTwenty() {
-	//Ваш код
+	const elemPrepend = document.getElementById('practicum20');
+	const newElementP = document.createElement('p');
+	newElementP.textContent = 'Добавлено в начало';
+	elemPrepend.prepend(newElementP);
 }
 
 document.querySelector('.b-20').onclick = makeTwenty;
@@ -251,7 +257,10 @@ document.querySelector('.b-20').onclick = makeTwenty;
 //Подсказка: Используйте метод append для добавления нового дочернего элемента в конец элемента <div>
 
 function makeTwentyOne() {
-	//Ваш код
+	const elemAppend = document.getElementById('practicum21');
+	const newElementAppend = document.createElement('p');
+	newElementAppend.textContent = 'Добавлено в конец';
+	elemAppend.append(newElementAppend);
 }
 
 document.querySelector('.b-21').onclick = makeTwentyOne;
@@ -262,9 +271,15 @@ document.querySelector('.b-21').onclick = makeTwentyOne;
 
 function makeTwentyTwo() {
 	//1 шаг: Найдите элемент
+	const imgObject = document.getElementById('practicum22');
+	console.log(imgObject);
 	//2 шаг: Создайте переменную, которая проверяет наличие атрибута у найденного элемента
+	const imgHasAttribute = imgObject.hasAttribute ('src');
+	console.log(imgHasAttribute);
 	//3 шаг: Найдите элемент, в который нужно вставить значение
+	const result = document.getElementById('result22');
 	//4 шаг: Добавьте в эелемент текстовое значение 2 шага. Например: переменная = 'Атрибут "src" присутствует: ' + название переменной из 2 шага;
+	result.innerText = ('Атрибут "src" присутствует: ' + imgHasAttribute);
 }
 
 document.querySelector('.b-22').onclick = makeTwentyTwo;
@@ -360,3 +375,5 @@ function handleMouseOver() {
 }
 
 //Ваш код 
+
+
