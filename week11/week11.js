@@ -301,7 +301,7 @@ document.querySelector('.b-23').onclick = makeTwentyThree;
 
 function makeTwentyFour() {
 	const inputObject = document.getElementById('practicum24');
-	inputObject.setAttribute(name, value);
+	inputObject.setAttribute('value', 'Новое значение');
 }
 
 document.querySelector('.b-24').onclick = makeTwentyFour;
@@ -312,11 +312,15 @@ document.querySelector('.b-24').onclick = makeTwentyFour;
 
 function makeTwentyFive() {
 	//1 шаг: Найдите элемент
-	const aObject = document.getElementById('practicum23');
+	const attributObject = document.getElementById('practicum25');
 	//2 шаг: Добавьте элементу, найденному в первом шаге, атрибут: ('data-info', 'Дополнительная информация');
+	attributObject.setAttribute('data-info', 'Дополнительная информация');
 	//3 шаг: Запишите значение атрибута в переменную
+	const attributValue = attributObject.getAttribute('data-info');
 	//4 шаг: Найдите элемент, в который нужно вставить значение из 3 шага
+	const infoOutputObject = document.getElementById('infoOutput');
 	//5 шаг: Добавьте в элемент 4 шага текстовое значение 3 шага. Например: переменная = 'Добавленный атрибут: ' + название переменной из 3 шага;
+	infoOutputObject.innerText = ('Добавленный атрибут: ' + attributValue);
 }
 
 document.querySelector('.b-25').onclick = makeTwentyFive;
