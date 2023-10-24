@@ -32,6 +32,10 @@
     justify-content: center;
 }
 
+.checked {
+    color: #e5a06c;
+    text-decoration: line-through;
+}
 
 
 

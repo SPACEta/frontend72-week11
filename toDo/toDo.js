@@ -20,9 +20,9 @@ function createTask() {
 
 function checkTask(newTask) {
     //Проверяем, что кликнули на элемент списка (event.target)
-    if (newTask.target.tagName === 'li') {
+    if (newTask.target.tagName === 'LI') {
     //Если условие выполняется, то переключаем состояние выполнения задачи, добавляя или удаляя класс у элемента списка (element.classList.toggle)   
-        newTask.target.classList.toggle('checked');
+    newTask.target.classList.toggle('checked');
     }
 }
 
