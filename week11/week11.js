@@ -330,7 +330,7 @@ document.querySelector('.b-25').onclick = makeTwentyFive;
 //Подсказка: Используйте метод closest для поиска ближайшего родительского элемента
 
 const button = document.querySelector('.b-26');
-// const parent = Ваш код;
+	const parent = button.closest('.parent'); 
 
 const makeTwentySix = () => {
 	parent.style.backgroundColor = 'red';
@@ -344,9 +344,13 @@ document.querySelector('.b-26').onclick = makeTwentySix;
 
 function makeTwentySeven() {
 	//Найдите переменную
+	let containsObject = document.getElementById('practicum27');
 	//Создайте переменную и сохраните в неё результат проверки метода contains. Например: const result = p.classList.contains('active');
+	let containsControl = containsObject.classList.contains('highlight');
 	//Найдите переменную, в которую нужно вывести результат
+	let containsResult = document.getElementById('result');
 	//Запишите результат в переменную
+	containsResult.innerText = containsControl;
 }
 
 document.querySelector('.b-27').onclick = makeTwentySeven;
@@ -362,6 +366,7 @@ function handleClick() {
 }
 
 //Добавьте слушатель eventListener на кнопку buttonTaskTwentyEight
+buttonTaskTwentyEight.addEventListener('click', handleClick);
 
 //Задание 29
 //Используйте метод getElementById, чтобы найти элемент <input />. Добавьте обработчик события change, который будет выводить сообщение "Значение изменено" в консоль при изменении значения в поле ввода.
@@ -371,7 +376,8 @@ function handleChange() {
 	console.log('Значение изменено');
 }
 
-//Ваш код
+const inputObject1 = document.getElementById('input29');
+inputObject1.addEventListener('change', handleChange);
 
 //Задание 30
 //Используйте метод getElementById, чтобы найти элемент <div>. Добавьте обработчик события `mouseover`, который будет выводить сообщение "Курсор наведен на элемент" в консоль при наведении курсора на элемент.
@@ -381,6 +387,7 @@ function handleMouseOver() {
 	console.log('Курсор наведен на элемент');
 }
 
-//Ваш код 
+const mouseoverObject = document.getElementById('div30');
+mouseoverObject.addEventListener('mouseover', handleMouseOver);
 
 

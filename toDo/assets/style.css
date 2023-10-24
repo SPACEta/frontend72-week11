@@ -1,0 +1,26 @@
+.main__heading {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main__form {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.taskinput {
+    border-radius: 5px;
+    border: 3px solid rgb(225, 102, 14);
+}
+
+.button {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgba(216, 222, 63, 0.696);
+    border-radius: 5px;
+    border: 3px solid rgb(225, 102, 14);
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
