@@ -1,20 +1,23 @@
-.main__heading {
+.main__heading,
+.tasklist__heading,
+.taskList {
     text-align: center;
     font-family: 'Roboto Slab', serif;
 }
 
-.main__form {
+.main__form,
+.task__form {
     display: flex;
     justify-content: center;
     gap: 1.5em;
 }
 
-.taskinput {
+#taskInput {
     border-radius: 5px;
     border: 3px solid rgb(225, 102, 14);
 }
 
-.button {
+#addButton {
     text-align: center;
     font-family: 'Roboto Slab', serif;
     background-color: rgba(216, 222, 63, 0.696);
@@ -23,4 +26,23 @@
     padding: 0.5rem;
     letter-spacing: 0.1rem;
 }
+
+.task__form {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
